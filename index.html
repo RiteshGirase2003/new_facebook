@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c757500192.js" crossorigin="anonymous"></script>
+    <title> FaceBook</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html"><i class="fa-brands fa-facebook logo "></i></a>
+                <ul>
+                    <li >
+                        <a href="index.html" title="Home">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Friends">
+                            <i class="fa-solid fa-user-group"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Groups">
+                            <i class="fa-solid fa-people-group"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>    
+                    <input type="text" placeholder="Search">
+                    <div class="nav-user-icon online">
+                        <img src="nikola.jpg" alt="Your Profile Picture">
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <!--  left side bar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#">
+                    <i class="fa-solid fa-user-group"></i> &nbsp; Find friends
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-clock-rotate-left"></i> &nbsp; Save
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-bookmark"></i> &nbsp; Memories
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-people-group"></i> &nbsp; Groups
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- main content -->
+        <!--     post     -->
+        
+        <div class="main-content">
+            
+            <!-- create new post -->
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="nikola.jpg" alt="Your Profile Picture">
+                    <div>
+                        <p>Nikola Tesla</p>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea name="" id="userinput"  rows="3" placeholder="What's in your mind, Nikola?" required></textarea>
+                    <button type="button" id="save" class="save-btn"> Post </button>
+
+                    <div class="add-post-links">
+                        <a href="#">
+                            <i class="fa-solid fa-video video"></i> Live Video
+                        </a>
+                        <a href="#">
+                            <i class="fa-regular fa-image photo"></i> Photo/Video
+                        </a>
+                        <a href="#">
+                            <i class="fa-sharp fa-regular fa-face-laugh-beam feeling"></i> Feeling/Activity
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Public posts -->
+            <script src="load.js"></script>
+
+            <div class="posts-container"></div>
+            
+            <!-- post end -->
+
+            <!-- load button -->
+            <button onclick="load()" type="button" class="load-more-button"> Load More </button>
+
+        </div>
+
+        <!-- right side bar -->
+
+        <div class="right-sidebar">
+            <div class="group-con">
+                <p>Group Conversation</p>
+                <span><i class="fa-solid fa-circle-plus"></i> &nbsp; Create New Group</span> 
+            </div>
+        </div>
+    </div>    
+    <!-- footer -->
+    <footer class="footer">
+        <p>Copyright &copy; 2023 - <a href="index.html">facebook</a></p>
+    </footer>
+    
+
+</body>
+</html>
